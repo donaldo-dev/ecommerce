@@ -20,6 +20,7 @@ export default function DeleteProductPage(){
         }
         axios.get('/api/products?id='+id).then(response =>{
             setProductInfo(response.data);
+
         })
     }, [id])
     return(
